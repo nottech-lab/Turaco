@@ -36,10 +36,10 @@ Wait for composer to finish the installation before running the next commands
 > run `php artisan key:generate` This command will generate a random 32 bits security string that Laravel requires. The key is added to `.env` file and assigned to `APP_KEY` key
 
 
-### Running the app
-## In production
+## Running the app
+### In production
 Laravel serves a page via the public directory, so configure your Webserve to point that directory as your document root. 
 
-## Locally
+### Locally
 On your local environment you can use `php artisan serve` to run the app and the command will show you the address and port on which the app is served. The default address is `http://127.0.0.1:8000`
 
