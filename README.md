@@ -1,5 +1,7 @@
 #TURACO
+
 An Open Source School Enterprise Resource Planning (ERP), can be used to manage students records and other school resources.  The system is built in modules which can be installed and removed to extend the functionality of the system
+
 >TURACO is a PHP codebase that runs on Laravel Framework
 
 ##Installation & Configuration
@@ -34,9 +36,9 @@ Wait for composer to finish the installation before running the next commands
 
 
 ###Running the app
-####In production
+**In production**
 Laravel serves a page via the public directory, so configure your Webserve to point that directory as your document root. 
 
-####Locally
+**Locally**
 On your local environment you can use `php artisan serve` to run the app and the command will show you the address and port on which the app is served. The default address is `http://127.0.0.1:8000`
 
