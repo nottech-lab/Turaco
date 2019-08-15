@@ -5,6 +5,7 @@ An Open Source School Enterprise Resource Planning (ERP), can be used to manage 
 >TURACO is a PHP codebase that runs on Laravel Framework
 
 ##Installation & Configuration
+
 ###Requirements
 This project require that you have
 * PHP >= 7.1.3
@@ -21,6 +22,7 @@ This command will download the TURACO project and store it inside **_your/direct
 
 
 ###Setting up
+
 Once the cloning/downloading is completed and the files are on your local machine. Confirm that you have the directory
 named **turaco** inside **_your/directory_** and on your terminal/dos on PC's execute the following commands
 
@@ -36,6 +38,7 @@ Wait for composer to finish the installation before running the next commands
 
 
 ###Running the app
+
 **In production**
 Laravel serves a page via the public directory, so configure your Webserve to point that directory as your document root. 
 
