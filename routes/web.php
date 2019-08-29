@@ -12,5 +12,20 @@
 */
 
 Route::get('/', function () {
+    return view('auth.login');
+});
+
+Route::get('/dashboard', function () {
     return view('pages.dashboard');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::resource('roles','RoleController');
+    Route::resource('users','UserController');
+    Route::resource('students','StudentController');
+    Route::post('users/edit/{id}', 'UserController@update');
 });
