@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('pages.dashboard');
 });
+
+Route::view('login', 'auth.login')->name('login');
+
+
+Route::view('register', 'auth.register')->name('register');
+
+
+Route::view('reset', 'auth.reset')->name('reset');
+
+
+Route::post('store','AuthController@store')->name('store');
+
+
+Route::post('resetaction','AuthController@resetaction')->name('resetaction');
+
+Route::post('logs','AuthController@logs')->name('logs');
