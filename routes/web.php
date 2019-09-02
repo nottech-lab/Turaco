@@ -14,3 +14,22 @@
 Route::get('/', function () {
     return view('pages.dashboard');
 });
+
+Route::get('/reset', function () {
+    return view('Authviews.passwordreset');
+});
+
+Route::get('/register', function () {
+    return view('Authviews.Register');
+});
+
+Route::get('/login', function () {
+    return view('Authviews.login');
+});
+Route::post('/store', 'UserController@store')->name('store');
+
+
+Route::post('/logs', 'UserController@logs')->name('logs');
+
+
+Route::post('/resetaction', 'UserController@resetaction')->name('resetaction');
